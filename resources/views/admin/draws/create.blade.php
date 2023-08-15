@@ -58,7 +58,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="type"
+                            <label for="file"
                                    class="col-md-12 col-form-label text-md-start">{{ __('File') }}</label>
 
                             <div class="col-md-12">

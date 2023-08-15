@@ -84,6 +84,24 @@
                         <i class="nav-icon fas fa-draw-polygon"></i>
                         <p>
                             Draw Results
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ url('admin/categories') }}" class="nav-link">
+                        <i class="nav-icon fas fa-briefcase"></i>
+                        <p>
+                            Categories
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ url('admin/posts') }}" class="nav-link">
+                        <i class="nav-icon fas fa-page4"></i>
+                        <p>
+                            Posts
                             <span class="right badge badge-success">New</span>
                         </p>
                     </a>

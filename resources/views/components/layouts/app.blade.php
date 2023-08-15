@@ -47,7 +47,7 @@
     <!-- summernote -->
     {{--    <link rel="stylesheet" href="{{ asset('vendor/adminlte-3.2.0/plugins/summernote/summernote-bs4.min.css') }}">--}}
 
-
+    {{ $styles ?? '' }}
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -70,10 +70,28 @@
             {{--            <li class="nav-item d-none d-sm-inline-block">--}}
             {{--                <a href="#" class="nav-link">Contact</a>--}}
             {{--            </li>--}}
+
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </div>
+            </li>
         </ul>
 
         {{--        <!-- Right navbar links -->--}}
-        {{--        <ul class="navbar-nav ml-auto">--}}
+        {{--                <ul class="navbar-nav ml-auto">--}}
+
         {{--            <!-- Navbar Search -->--}}
         {{--            <li class="nav-item">--}}
         {{--                <a class="nav-link" data-widget="navbar-search" href="#" role="button">--}}
@@ -202,7 +220,8 @@
     <div class="content-wrapper">
 
         @if(session()->has('success'))
-            <div class="content-header" x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)">
+            <div class="content-header" x-data="{ show: true }" x-show="show"
+                 x-init="setTimeout(() => show = false, 3000)">
                 <div class="container-fluid">
                     <div class="alert alert-success alert-dismissible">
                         <button type="button" class="btn btn-sm btn-close" data-bs-dismiss="alert"></button>

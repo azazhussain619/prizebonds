@@ -17,8 +17,10 @@
             <div class="card">
                 <div class="card-header">
                     Manage Draw Results
-                    <a href="{{ url('admin/draw-results/create') }}" class="btn btn-sm btn-success float-right">Add
-                        New</a>
+                    @can('create draw-results')
+                        <a href="{{ url('admin/draw-results/create') }}" class="btn btn-sm btn-success float-right">Add
+                            New</a>
+                    @endcan
                 </div>
                 <div class="card-body">
                     {{ $dataTable->table() }}

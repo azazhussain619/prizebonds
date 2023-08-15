@@ -9,6 +9,13 @@ use Illuminate\Validation\Rule;
 
 class DenominationController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('permission:create denominations')->only(['create','store']);
+        $this->middleware('permission:edit denominations')->only(['edit','update']);
+    }
+
     /**
      * Display a listing of the resource.
      */

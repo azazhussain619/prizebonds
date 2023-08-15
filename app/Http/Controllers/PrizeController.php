@@ -11,6 +11,13 @@ use Illuminate\Validation\Rule;
 class PrizeController extends Controller
 {
     //
+
+    public function __construct()
+    {
+        $this->middleware('permission:create prizes')->only(['create','store']);
+        $this->middleware('permission:edit prizes')->only(['edit','update']);
+    }
+
     /**
      * Display a listing of the resource.
      */

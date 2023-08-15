@@ -13,6 +13,12 @@ class DrawController extends Controller
 {
     //
     //
+    public function __construct()
+    {
+        $this->middleware('permission:create draws')->only(['create','store']);
+        $this->middleware('permission:edit draws')->only(['edit','update']);
+    }
+
     /**
      * Display a listing of the resource.
      */

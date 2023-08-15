@@ -13,6 +13,13 @@ use Illuminate\Validation\Rule;
 class DrawResultController extends Controller
 {
     //
+
+    public function __construct()
+    {
+        $this->middleware('permission:create draw-results')->only(['create','store']);
+        $this->middleware('permission:edit draw-results')->only(['edit','update']);
+    }
+
     /**
      * Display a listing of the resource.
      */
