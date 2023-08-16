@@ -12,6 +12,7 @@ class DenominationController extends Controller
 
     public function __construct()
     {
+        $this->middleware('permission:view denominations')->only(['index']);
         $this->middleware('permission:create denominations')->only(['create','store']);
         $this->middleware('permission:edit denominations')->only(['edit','update']);
     }

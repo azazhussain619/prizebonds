@@ -16,6 +16,13 @@ class PostController extends Controller
 {
     //
 
+    public function __construct()
+    {
+//        $this->middleware('permission:view posts')->only(['index']);
+//        $this->middleware('permission:create posts')->only(['create','store']);
+//        $this->middleware('permission:edit posts')->only(['edit','update']);
+    }
+
     public function createDrawPosts()
     {
 
