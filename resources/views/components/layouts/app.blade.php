@@ -12,6 +12,8 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+    <link rel="icon" type="image/x-icon" href="{{ asset('vendor/startbootstrap/assets/favicon.ico') }}"/>
+
     <!-- Fonts -->
     {{--    <link rel="dns-prefetch" href="//fonts.bunny.net">--}}
     {{--    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">--}}
