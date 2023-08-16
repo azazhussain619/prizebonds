@@ -17,10 +17,12 @@
             <div class="card">
                 <div class="card-header">
                     Manage Posts
-                    @can('create posts')
-                        <a href="{{ url('admin/posts/create') }}" class="btn btn-sm btn-success float-right">Add
-                            New</a>
-                    @endcan
+                    <div class="float-right">
+                        @can('create posts')
+                            <a href="{{ url('admin/posts/draw/create') }}" class="btn btn-sm btn-info">Add Draw Post</a>
+                            <a href="{{ url('admin/posts/create') }}" class="btn btn-sm btn-success ">Add New</a>
+                        @endcan
+                    </div>
                 </div>
                 <div class="card-body">
                     {{ $dataTable->table() }}

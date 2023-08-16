@@ -14,6 +14,7 @@ class PrizeController extends Controller
 
     public function __construct()
     {
+        $this->middleware('permission:view prizes')->only(['index']);
         $this->middleware('permission:create prizes')->only(['create','store']);
         $this->middleware('permission:edit prizes')->only(['edit','update']);
     }

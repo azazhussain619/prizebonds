@@ -15,6 +15,7 @@ class DrawController extends Controller
     //
     public function __construct()
     {
+        $this->middleware('permission:view draws')->only(['index']);
         $this->middleware('permission:create draws')->only(['create','store']);
         $this->middleware('permission:edit draws')->only(['edit','update']);
     }

@@ -12,7 +12,9 @@ class CategoryController extends Controller
     //
     public function __construct()
     {
-
+        $this->middleware('permission:view categories')->only(['index']);
+        $this->middleware('permission:create categories')->only(['create','store']);
+        $this->middleware('permission:edit categories')->only(['edit','update']);
     }
 
     public function index(CategoriesDataTable $dataTable)

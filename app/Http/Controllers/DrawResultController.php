@@ -16,6 +16,7 @@ class DrawResultController extends Controller
 
     public function __construct()
     {
+        $this->middleware('permission:view draw-results')->only(['index']);
         $this->middleware('permission:create draw-results')->only(['create','store']);
         $this->middleware('permission:edit draw-results')->only(['edit','update']);
     }

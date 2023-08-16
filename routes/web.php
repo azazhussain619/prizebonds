@@ -57,6 +57,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/posts/{post}/edit', [App\Http\Controllers\PostController::class, 'edit'])->name('posts.edit');
     Route::put('/admin/posts/{post}', [App\Http\Controllers\PostController::class, 'update'])->name('posts.update');
 
+    Route::get('/admin/posts/draw/create', [App\Http\Controllers\PostController::class, 'createDrawPost'])->name('posts.draw.create');
+    Route::post('/admin/posts/draw', [App\Http\Controllers\PostController::class, 'storeDrawPost'])->name('posts.draw.store');
+
     Route::get('/admin/create-draw-posts', [App\Http\Controllers\PostController::class, 'createDrawPosts']);
 
 });
