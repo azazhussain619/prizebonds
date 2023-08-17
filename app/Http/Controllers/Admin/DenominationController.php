@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\DataTables\DenominationsDataTable;
+use App\Http\Controllers\Controller;
 use App\Models\Denomination;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;

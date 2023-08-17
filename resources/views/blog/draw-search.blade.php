@@ -118,7 +118,7 @@
                         <hr/>
 
                         <div class="row"><h4>Range Search</h4>
-                            <span class="small text-secondary">Search For All Numbers in Range <br/>EXAMPLE: From: 122000 To: 122099</span>
+                            <span class="small text-secondary">Search for all numbers in range <br/>EXAMPLE: From: 122000 To: 122099</span>
                         </div>
 
                         <div class="row">
@@ -148,8 +148,8 @@
                         <hr/>
 
                         <div class="row"><h4>Miscel. Numbers</h4>
-                            <span class="small text-secondary">Include Following List of Numbers in Search<br/>
-                                EXAMPLE: 123455,556879,445632,122354</span>
+                            <span class="small text-secondary">Search for list of numbers<br/>
+                                EXAMPLE: 123455 556879 445632 122354</span>
                         </div>
 
                         <div class="row">

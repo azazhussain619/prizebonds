@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\DataTables\PostsDataTable;
+use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Denomination;
 use App\Models\Draw;
 use App\Models\DrawResult;
 use App\Models\Post;
 use App\Models\Prize;
-use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
 

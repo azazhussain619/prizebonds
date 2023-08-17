@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\DataTables\DrawsDataTable;
+use App\Http\Controllers\Controller;
 use App\Models\Denomination;
 use App\Models\Draw;
 use Illuminate\Http\Request;

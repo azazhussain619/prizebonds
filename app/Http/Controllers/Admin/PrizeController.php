@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\DataTables\PrizesDataTable;
+use App\Http\Controllers\Controller;
 use App\Models\Denomination;
 use App\Models\Prize;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 
 class PrizeController extends Controller
 {

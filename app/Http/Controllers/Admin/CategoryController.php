@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\DataTables\CategoriesDataTable;
+use App\Http\Controllers\Controller;
 use App\Models\Category;
-use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
 class CategoryController extends Controller
