@@ -188,6 +188,10 @@
         <script type="module">
             // Optionally the request above could also be done as
 
+            $(document).ready(function(){
+               $('#from').blur();
+            });
+
             $("#denomination_id").bind("change", function () {
                 console.log(this.value);
                 let select = document.getElementById("draw_id");
