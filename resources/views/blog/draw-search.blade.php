@@ -1,11 +1,9 @@
 <x-layouts.blog>
     <x-slot name="title">Draw Search</x-slot>
     <x-slot name="meta">
-        <meta charset="UTF-8">
         <meta name="description" content="Prize Bond Draw Search! Instantly find results and check if you've won any prize. Try now!">
         <meta name="keywords" content="Prize Bond Draw Search">
         <meta name="author" content="Syed Azaz Hussain Shah">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </x-slot>
     <x-slot name="header">
         <div class="post-heading">

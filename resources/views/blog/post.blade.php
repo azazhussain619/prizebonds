@@ -1,11 +1,9 @@
 <x-layouts.blog>
     <x-slot name="title">{{ $post->title }}</x-slot>
     <x-slot name="meta">
-        <meta charset="UTF-8">
         <meta name="description" content="{{ $post->excerpt }}">
         <meta name="keywords" content="{{ $post->title }}">
         <meta name="author" content="Syed Azaz Hussain Shah">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </x-slot>
     <x-slot name="header">
         <div class="post-heading">
