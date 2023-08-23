@@ -22,4 +22,9 @@ class Draw extends Model
     {
         return $this->hasMany(DrawResult::class);
     }
+
+    public function getDateAttribute()
+    {
+        return date_format(date_create($this->attributes['date']), 'd-M-Y');
+    }
 }
