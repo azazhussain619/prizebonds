@@ -1,14 +1,14 @@
 <x-layouts.blog>
-    <x-slot name="title">Prize Bond Draw Results, Search</x-slot>
+    <x-slot name="title">Prize Bond Draw Results & Search</x-slot>
     <x-slot name="meta">
-        <meta name="description" content="Your ultimate Prize Bond destination! Check draw results, plan with draw schedule, and search past draws effortlessly. Your winning journey starts here">
-        <meta name="keywords" content="Prize Bond Draw Results, Search">
+        <meta name="description" content="Check prize bond draw results, plan with draw schedule, and search past draws effortlessly. Your winning journey starts here!">
+        <meta name="keywords" content="Prize Bond Draw Results, Prize Bond Draw Search">
         <meta name="author" content="Syed Azaz Hussain Shah">
     </x-slot>
     <x-slot name="header">
         <div class="site-heading">
             <h1>Prize Bonds</h1>
-            <span class="subheading">Latest Draw Results, News & Updates</span>
+            <span class="subheading">Latest Draw Results, Search, News & Updates</span>
         </div>
     </x-slot>
 

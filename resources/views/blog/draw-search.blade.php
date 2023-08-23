@@ -1,5 +1,5 @@
 <x-layouts.blog>
-    <x-slot name="title">Draw Search</x-slot>
+    <x-slot name="title">Prize Bond Draw Search</x-slot>
     <x-slot name="meta">
         <meta name="description" content="Prize Bond Draw Search! Instantly find results and check if you've won any prize. Try now!">
         <meta name="keywords" content="Prize Bond Draw Search">
