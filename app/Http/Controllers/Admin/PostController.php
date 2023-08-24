@@ -42,8 +42,8 @@ class PostController extends Controller
                 list($firstPrize, $secondPrize, $firstPrizeSerials, $secondPrizeSerials, $postContent) = $this->generatePostContent($draw, $denomination);
 
                 $post = new Post();
-                $post->title = 'Draw Result of Prize Bond Rs.' . $denomination->price . '/-'.($denomination->type ? ' '.$denomination->type : '').' dated ' . $draw->date . ' held at ' . $draw->location;
-                $post->slug = 'draw-results-prize-bond-' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'-dated-' . $draw->date;
+                $post->title = 'Rs.' . $denomination->price . '/-'.($denomination->type ? ' '.$denomination->type : '').' Prize Bond List Draw Results dated ' . $draw->date . ' ' . $draw->location;
+                $post->slug = '' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'prize-bond-list-draw-results-dated-' . strtolower($draw->date);
                 $post->content = nl2br($postContent);
 
                 $post->category_id = $denomination->id;
@@ -81,8 +81,8 @@ class PostController extends Controller
         list($firstPrize, $secondPrize, $firstPrizeSerials, $secondPrizeSerials, $postContent) = $this->generatePostContent($draw, $denomination);
 
         $post = new Post();
-        $post->title = 'Draw Result of Prize Bond Rs.' . $denomination->price . '/-'.($denomination->type ? ' '.$denomination->type : '').' dated ' . $draw->date . ' held at ' . $draw->location;
-        $post->slug = 'draw-results-prize-bond-' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'-dated-' . $draw->date;
+        $post->title = 'Rs.' . $denomination->price . '/-'.($denomination->type ? ' '.$denomination->type : '').' Prize Bond List Draw Results dated ' . $draw->date . ' ' . $draw->location;
+        $post->slug = '' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'prize-bond-list-draw-results-dated-' . strtolower($draw->date);
         $post->content = nl2br($postContent);
 
         $post->category_id = $denomination->id;

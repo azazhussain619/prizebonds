@@ -1,8 +1,9 @@
 <x-layouts.blog>
     <x-slot name="title">{{ $post->title }}</x-slot>
     <x-slot name="meta">
+        <meta name="title" content="{{ $post->title }}">
         <meta name="description" content="{{ $post->excerpt }}">
-        <meta name="keywords" content="{{ $post->title }}">
+{{--        <meta name="keywords" content="{{ $post->title }}">--}}
         <meta name="author" content="Syed Azaz Hussain Shah">
     </x-slot>
     <x-slot name="header">
