@@ -43,7 +43,7 @@ class PostController extends Controller
 
                 $post = new Post();
                 $post->title = 'Rs.' . $denomination->price . '/-'.($denomination->type ? ' '.$denomination->type : '').' Prize Bond List Draw Results dated ' . $draw->date . ' ' . $draw->location;
-                $post->slug = '' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'prize-bond-list-draw-results-dated-' . strtolower($draw->date);
+                $post->slug = '' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'-prize-bond-list-draw-results-dated-' . strtolower($draw->date);
                 $post->content = nl2br($postContent);
 
                 $post->category_id = $denomination->id;
@@ -82,7 +82,7 @@ class PostController extends Controller
 
         $post = new Post();
         $post->title = 'Rs.' . $denomination->price . '/-'.($denomination->type ? ' '.$denomination->type : '').' Prize Bond List Draw Results dated ' . $draw->date . ' ' . $draw->location;
-        $post->slug = '' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'prize-bond-list-draw-results-dated-' . strtolower($draw->date);
+        $post->slug = '' . $denomination->price . ($denomination->type ? '-'.strtolower($denomination->type) : '').'-prize-bond-list-draw-results-dated-' . strtolower($draw->date);
         $post->content = nl2br($postContent);
 
         $post->category_id = $denomination->id;

@@ -25,6 +25,10 @@
                 <?php echo $post->content ?>
             </div>
 
+            <div class="row small mb-4 text-center">
+                <span class="">Didn't found your serial? Search in previous draws! <a href="{{ url('draw-search') }}">Prize Bonds Draw Search</a></span>
+            </div>
+
 
         </div>
     </div>
