@@ -7,7 +7,7 @@
     </x-slot>
     <x-slot name="header">
         <div class="post-heading">
-            <h1>Draw Search</h1>
+            <h1>Prize Bonds Draw Search</h1>
             {{--            <span class="subheading">Latest Draw Results, News & Updates</span>--}}
         </div>
     </x-slot>
